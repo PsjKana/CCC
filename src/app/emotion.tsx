@@ -3,6 +3,7 @@
 import { CacheProvider } from '@emotion/react';
 import { useEmotionCache } from '@mantine/core';
 import { useServerInsertedHTML } from 'next/navigation';
+import { ReactNode } from 'react';
 
 export default function RootStyleRegistry({ children }: { children: ReactNode }) {
   const cache = useEmotionCache();
